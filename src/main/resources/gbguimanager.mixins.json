@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.glow.gbguimanager.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "MixinKeyboardHandler",
+    "MixinKeyMapping",
+    "MixinOptions"
+  ]
+}
