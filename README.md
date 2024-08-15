@@ -21,8 +21,7 @@ First, you need to set jitpack as a repository source. Add this to your build.gr
 Next, add a dependency for the module to your build.gradle
 
     dependencies {
-		implementation 'com.github.glowskibroski:GBGUIManager:-SNAPSHOT'
-		modImplementation 'com.github.glowskibroski:GBGUIManager:-SNAPSHOT'
+		modImplementation 'com.github.glowskibroski:GBGUIManager:VERSION'
 	}
 
 You're done! Run gradle to implement the project, and you have full access to the library
@@ -40,7 +39,7 @@ Add widgets to your GUI with the addElements(); method inside of the constructor
 
  	public NewGUI(String title) {
   		super(title);
-    	addElements(new GuiButton(...));
+    	addGuiElements(new GuiButton(...));
      	}
 
 After setting up your GUI, go to your mod initializer, and add the GUI to the GuiManager. You may also add a key mapping. If you prefer to have no mapping, type "null" as the second parameter
