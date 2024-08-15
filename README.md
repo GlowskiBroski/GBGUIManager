@@ -26,3 +26,32 @@ Next, add a dependency for the module to your build.gradle
 	}
 
 You're done! Run gradle to implement the project, and you have full access to the library
+
+# How do I create a GUI
+
+Create a new class, and have that class extend the BaseGUI Class
+
+	import com.glow.gbgui.gui.BaseGUI;
+
+	public class NewGUI extends BaseGUI {
+ 	}
+
+Add widgets to your GUI with the addElements(); method inside of the constructor of the GUI class
+
+ 	public NewGUI(String title) {
+  		super(title);
+    		addElements(new GuiButton(...));
+     	}
+
+After setting up your GUI, go to your mod initializer, and add the GUI to the GuiManager. You may also add a key mapping. If you prefer to have no mapping, type "null" as the second parameter
+
+	@Override
+ 	public void onInitialize() {
+		GuiManager.getInstance()
+  			.addGUI(new NewGUI("Title1"), new KeyMapping("Mapping Name 1", GLFW.KEY ID, "Category Name"))
+  			.addGUI(new AnotherGUI("Title2"), new KeyMapping("Mapping Name 2", GLFW.KEY ID, "Category Name"))
+  			.addGUI(new MoreGUI("Title3"), new KeyMapping("Mapping Name 3", GLFW.KEY ID, "Category Name"))
+  			.addGUI(new LookAnotherOne("Title4"), new KeyMapping("Mapping Name 4", GLFW.KEY ID, "Category Name"))
+     			...
+  	}
+	
