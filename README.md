@@ -40,7 +40,7 @@ Add widgets to your GUI with the addElements(); method inside of the constructor
 
  	public NewGUI(String title) {
   		super(title);
-    		addElements(new GuiButton(...));
+    	addElements(new GuiButton(...));
      	}
 
 After setting up your GUI, go to your mod initializer, and add the GUI to the GuiManager. You may also add a key mapping. If you prefer to have no mapping, type "null" as the second parameter
