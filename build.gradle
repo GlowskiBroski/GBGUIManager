@@ -47,12 +47,11 @@ jar {
 // configure the maven publication
 publishing {
 	publications {
-		create("mavenJava", MavenPublication) {
-			artifactId = project.archives_base_name
+		mavenJava(MavenPublication) {
+			groupId = 'com.glow.gbgui'
+			artifactId = 'GBGUI'
+			version = '1.0.0'
 			from components.java
 		}
-	}
-
-	repositories {
 	}
 }

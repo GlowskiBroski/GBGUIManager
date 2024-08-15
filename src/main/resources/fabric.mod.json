@@ -2,25 +2,23 @@
 	"schemaVersion": 1,
 	"id": "gbguimanager",
 	"version": "${version}",
-	"name": "GBGUIManager",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "GBGUI",
+	"description": "This is a mod description!!!",
 	"authors": [
 		"GlowskiBroski"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/GlowskiBroski/GBGUIManager"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"com.glow.gbguimanager.GBGUIManager"
-		]
+		"main": ["com.glow.gbgui.GBGUI"]
 	},
 	"mixins": [
-		"gbguimanager.mixins.json"
+		"gbgui.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
