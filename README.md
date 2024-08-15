@@ -49,9 +49,9 @@ After setting up your GUI, go to your mod initializer, and add the GUI to the Gu
  	public void onInitialize() {
 		GuiManager.getInstance()
   			.addGUI(new NewGUI("Title1"), new KeyMapping("Mapping Name 1", GLFW.KEY ID, "Category Name"))
-  			.addGUI(new AnotherGUI("Title2"), new KeyMapping("Mapping Name 2", GLFW.KEY ID, "Category Name"))
+  			.addGUI(new AnotherGUI("Title2"), null)
   			.addGUI(new MoreGUI("Title3"), new KeyMapping("Mapping Name 3", GLFW.KEY ID, "Category Name"))
-  			.addGUI(new LookAnotherOne("Title4"), new KeyMapping("Mapping Name 4", GLFW.KEY ID, "Category Name"))
+  			.addGUI(new LookAnotherOne("Title4"), null)
      			...
   	}
 	
