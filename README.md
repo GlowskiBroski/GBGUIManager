@@ -21,8 +21,8 @@ First, you need to set jitpack as a repository source. Add this to your build.gr
 Next, add a dependency for the module to your build.gradle
 
     dependencies {
-		implementation 'com.github.glowskibroski:GBGUIManager:1.0.0'
-		modImplementation 'com.github.glowskibroski:GBGUIManager:1.0.0'
+		implementation 'com.github.glowskibroski:GBGUIManager:-SNAPSHOT'
+		modImplementation 'com.github.glowskibroski:GBGUIManager:-SNAPSHOT'
 	}
 
 You're done! Run gradle to implement the project, and you have full access to the library
